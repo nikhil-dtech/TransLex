@@ -1,16 +1,48 @@
-# React + Vite
+# TransLex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TransLex** is a simple browser extension that helps you understand the meaning of any word in your preferred language.  
+It bridges the gap between languages and makes reading easier.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Setup Instructions
 
-## React Compiler
+### 1. Clone the Repository
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+git clone https://github.com/nikhil-dtech/TransLex.git
+cd TransLex
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Load the Extension in Your Browser
+
+
+Open Chrome (or any Chromium-based browser like Edge/Brave).
+
+Go to Extensions by visiting:
+
+chrome://extensions/
+
+
+Enable Developer mode (top-right corner).
+
+Click Load unpacked.
+
+Select the project folder (TransLex).
+
+### 3. Start Using TransLex
+
+Highlight any word on a webpage.
+
+The extension will show you the meaning in your preferred language.
+
+You can configure your preferred language in the extension’s settings.
+
+```bash
+
+📌 Features
+
+🔎 Get instant meanings of words in any language.
+
+🌍 Choose your preferred translation language.
+
+⚡ Works directly inside your browser with a simple popup.
