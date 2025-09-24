@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "LinguaLink",
+  "version": "1.0.0",
+  "description": "Translate PDF text in your browser",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "file://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*", 
+        "file://*/*.pdf"
+      ],
+      "js": ["contentScript.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "LinguaLink"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #4a6fa5;
+  --secondary-color: #166088;
+  --accent-color: #4cb5f5;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --light-gray: #e9ecef;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lingua-link-popup {
+  width: 360px;
+  min-height: 500px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lingua-link-popup header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.lingua-link-popup .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.lingua-link-popup .logo-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.lingua-link-popup .container {
+  padding: 16px;
+}
+
+.lingua-link-popup .tabs {
+  display: flex;
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius);
+  margin: 12px 0;
+  overflow: hidden;
+}
+
+.lingua-link-popup .tab {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.lingua-link-popup .tab.active {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.lingua-link-popup .translation-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: var(--box-shadow);
+}
+
+.lingua-link-popup .original-text {
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.lingua-link-popup .empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6c757d;
+}
+
+.lingua-link-popup .settings-option {
+  margin-bottom: 16px;
+}
+
+.lingua-link-popup .settings-option label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.lingua-link-popup select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
